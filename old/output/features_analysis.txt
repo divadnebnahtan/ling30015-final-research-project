@@ -1,0 +1,489 @@
+File: C:\Users\Nathan\OneDrive\Documents\University\LING30015\Code\predicate_features.csv
+Sample rows: 5000
+Columns and dtypes (from sample):
+  verb_form: object
+  verb_lemma: object
+  voice: object
+  xpos: object
+  tense: object
+  aspect: float64
+  mood: object
+  person: float64
+  number: object
+  aux_present: bool
+  aux_lemmas: object
+  aux_be: bool
+  aux_get: bool
+  aux_have: bool
+  aux_modal: bool
+  has_aux_pass: bool
+  verbform: object
+  finite: bool
+  nonfinite: bool
+  participial: bool
+  negated: bool
+  morph_marked: bool
+  clitic_present: bool
+  has_nsubj: bool
+  has_nsubj_pass: bool
+  n_subj_nodes: int64
+  subject_info: object
+  n_objs: int64
+  n_iobjs: int64
+  obj_info: object
+  n_clausal_complements: int64
+  has_agent_obl_agent: bool
+  has_agent_by_pp: bool
+  has_agent_phrase: bool
+  subj_linear_distance: float64
+  subj_tree_distance: float64
+  order_subject_before_verb: object
+  obj_linear_distance: float64
+  obj_tree_distance: float64
+  order_object_before_verb: object
+  order_type: object
+  deprel_counts: object
+  n_subj: int64
+  n_subj_pass: int64
+  n_obj: int64
+  n_iobj: int64
+  n_obl: int64
+  n_advmod: int64
+  n_compound: int64
+  n_xcomp: int64
+  n_ccomp: int64
+  n_csubj: int64
+  subcat_frame: object
+  clause_type: object
+  clause_finiteness: object
+  is_relcl_or_acl: bool
+  is_participial_clause: bool
+  is_conjunct: bool
+  conj_children_ids: object
+  conj_sibling_ids: object
+  conj_passive_evidence: object
+  this_passive_evidence: bool
+  coordination_harmony: object
+  lemma_freq: int64
+  lemma_freq_per_million: float64
+  lemma_passive_rate: float64
+  lemma_transitivity: float64
+  verb_semantic_classes: object
+  verbnet_classes: object
+  is_stative: bool
+  srl_predicate: object
+  has_ARG0: bool
+  has_ARG1: bool
+  subj_is_pronoun: object
+  subj_is_proper_noun: object
+  subj_definite: object
+  subj_animate: object
+  obj_is_pronoun: object
+  obj_is_proper_noun: object
+  obj_definite: object
+  obj_animate: object
+  verb_embedding: object
+  collocates: object
+  has_by_in_window: bool
+  prep_complements: object
+  has_hedge_marker: bool
+  genre: float64
+  formality_score: float64
+  sentence_index: int64
+  paragraph_index: int64
+  sentence_pos_normalized: float64
+  paragraph_pos_normalized: float64
+  sentence_position_cat: object
+  subject_coref_count: int64
+  agent_coref_recent: bool
+  subject_given: bool
+  reporting_context: bool
+  inside_quotes: bool
+  topic_vector: object
+  topic_entropy: float64
+  topic_max_prob: float64
+  discourse_relation: float64
+
+Missing values (sample):
+  tense: 1628 (32.56%)
+  aspect: 5000 (100.00%)
+  mood: 2675 (53.50%)
+  person: 2652 (53.04%)
+  number: 2754 (55.08%)
+  subj_linear_distance: 3055 (61.10%)
+  subj_tree_distance: 3055 (61.10%)
+  order_subject_before_verb: 3055 (61.10%)
+  obj_linear_distance: 2847 (56.94%)
+  obj_tree_distance: 2847 (56.94%)
+  order_object_before_verb: 2847 (56.94%)
+  order_type: 3055 (61.10%)
+  conj_passive_evidence: 4250 (85.00%)
+  coordination_harmony: 4250 (85.00%)
+  lemma_freq_per_million: 269 (5.38%)
+  lemma_passive_rate: 269 (5.38%)
+  lemma_transitivity: 269 (5.38%)
+  srl_predicate: 2278 (45.56%)
+  subj_is_pronoun: 3066 (61.32%)
+  subj_is_proper_noun: 3066 (61.32%)
+  subj_definite: 4544 (90.88%)
+  subj_animate: 3066 (61.32%)
+  obj_is_pronoun: 3573 (71.46%)
+  obj_is_proper_noun: 3573 (71.46%)
+  obj_definite: 4327 (86.54%)
+  obj_animate: 3573 (71.46%)
+  genre: 5000 (100.00%)
+  discourse_relation: 5000 (100.00%)
+
+Numeric columns (sample): ['aspect', 'person', 'n_subj_nodes', 'n_objs', 'n_iobjs', 'n_clausal_complements', 'subj_linear_distance', 'subj_tree_distance', 'obj_linear_distance', 'obj_tree_distance', 'n_subj', 'n_subj_pass', 'n_obj', 'n_iobj', 'n_obl', 'n_advmod', 'n_compound', 'n_xcomp', 'n_ccomp', 'n_csubj', 'lemma_freq', 'lemma_freq_per_million', 'lemma_passive_rate', 'lemma_transitivity', 'genre', 'formality_score', 'sentence_index', 'paragraph_index', 'sentence_pos_normalized', 'paragraph_pos_normalized', 'subject_coref_count', 'topic_entropy', 'topic_max_prob', 'discourse_relation']
+Detected large file (644.0 MiB) - using chunked aggregation for numeric columns
+
+Aggregated numeric summary:
+  aspect: no non-null values
+  person: n=18847, mean=2.491, std=0.7917, min=1, max=3
+  n_subj_nodes: n=37474, mean=0.3997, std=0.4961, min=0, max=2
+  n_objs: n=37474, mean=0.2778, std=0.448, min=0, max=2
+  n_iobjs: n=37474, mean=0.01118, std=0.1051, min=0, max=1
+  n_clausal_complements: n=37474, mean=0.1282, std=0.3384, min=0, max=2
+  subj_linear_distance: n=14865, mean=2.334, std=2.576, min=1, max=43
+  subj_tree_distance: n=14865, mean=1, std=0, min=1, max=1
+  obj_linear_distance: n=15607, mean=2.801, std=2.524, min=1, max=75
+  obj_tree_distance: n=15607, mean=1, std=0, min=1, max=1
+  n_subj: n=37474, mean=0.3513, std=0.4774, min=0, max=1
+  n_subj_pass: n=37474, mean=0.04206, std=0.2007, min=0, max=1
+  n_obj: n=37474, mean=0.2778, std=0.448, min=0, max=2
+  n_iobj: n=37474, mean=0.01118, std=0.1051, min=0, max=1
+  n_obl: n=37474, mean=0.238, std=0.5081, min=0, max=5
+  n_advmod: n=37474, mean=0.1912, std=0.4656, min=0, max=4
+  n_compound: n=37474, mean=0.00411, std=0.06397, min=0, max=1
+  n_xcomp: n=37474, mean=0.08227, std=0.2751, min=0, max=2
+  n_ccomp: n=37474, mean=0.04224, std=0.2011, min=0, max=1
+  n_csubj: n=37474, mean=0.003202, std=0.0565, min=0, max=1
+  lemma_freq: n=37474, mean=268.7, std=278, min=0, max=979
+  lemma_freq_per_million: n=35458, mean=1.145e+04, std=1.121e+04, min=40.31, max=3.946e+04
+  lemma_passive_rate: n=35458, mean=0.09584, std=0.1818, min=0, max=1
+  lemma_transitivity: n=35458, mean=0.3638, std=0.3425, min=0, max=1
+  genre: no non-null values
+  formality_score: n=37474, mean=0.3302, std=0.1521, min=0, max=0.9
+  sentence_index: n=37474, mean=0, std=0, min=0, max=0
+  paragraph_index: n=37474, mean=0, std=0, min=0, max=0
+  sentence_pos_normalized: n=37474, mean=0, std=0, min=0, max=0
+  paragraph_pos_normalized: n=37474, mean=0, std=0, min=0, max=0
+  subject_coref_count: n=37474, mean=1.042, std=3.703, min=0, max=89
+  topic_entropy: n=37474, mean=0.4585, std=0.3467, min=0.0448, max=2.631
+  topic_max_prob: n=37474, mean=0.8599, std=0.1629, min=0.1582, max=0.9949
+  discourse_relation: no non-null values
+
+Correlation matrix (sample):
+  aspect <-> person: r=nan
+  aspect <-> n_subj_nodes: r=nan
+  aspect <-> n_objs: r=nan
+  aspect <-> n_iobjs: r=nan
+  aspect <-> n_clausal_complements: r=nan
+  aspect <-> subj_linear_distance: r=nan
+  aspect <-> subj_tree_distance: r=nan
+  aspect <-> obj_linear_distance: r=nan
+  aspect <-> obj_tree_distance: r=nan
+  aspect <-> n_subj: r=nan
+Saved correlation heatmap to C:\Users\Nathan\OneDrive\Documents\University\LING30015\Code\Report\figures\features_correlation_heatmap.png
+Saved missing-values bar chart to C:\Users\Nathan\OneDrive\Documents\University\LING30015\Code\Report\figures\features_missing.png
+Saved histograms to C:\Users\Nathan\OneDrive\Documents\University\LING30015\Code\Report\figures\features_histograms.png
+Saved unique value counts stacked chart to C:\Users\Nathan\OneDrive\Documents\University\LING30015\Code\Report\figures\unique_value_counts_stacked_chart.png
+
+================================================================================
+STATISTICAL ANALYSIS: FEATURES INFLUENCING 'voice'
+================================================================================
+
+Voice distribution (sample):
+  active: 2300 (46.00%)
+  other: 1827 (36.54%)
+  passive: 873 (17.46%)
+
+Analyzing 55 categorical and 34 numeric features
+
+--- Chi-Square Tests (Categorical Features vs Voice) ---
+
+Top 20 Categorical Features by Effect Size (Cramér's V):
+  1. this_passive_evidence: V=0.7861, χ²=3089.58, p=0.0000e+00 ***
+  2. has_nsubj: V=0.7673, χ²=2943.60, p=0.0000e+00 ***
+  3. verb_semantic_classes: V=0.5793, χ²=3356.28, p=1.1094e-290 ***
+  4. xpos: V=0.5627, χ²=3166.81, p=0.0000e+00 ***
+  5. participial: V=0.5540, χ²=1534.75, p=0.0000e+00 ***
+  6. has_aux_pass: V=0.5434, χ²=1476.68, p=0.0000e+00 ***
+  7. verbnet_classes: V=0.5222, χ²=2726.51, p=1.0478e-174 ***
+  8. has_nsubj_pass: V=0.5133, χ²=1317.60, p=7.7185e-287 ***
+  9. has_ARG0: V=0.5036, χ²=1267.97, p=4.6149e-276 ***
+  10. subj_animate: V=0.4860, χ²=2362.32, p=0.0000e+00 ***
+  11. subj_is_pronoun: V=0.4836, χ²=2338.53, p=0.0000e+00 ***
+  12. order_type: V=0.4818, χ²=2321.79, p=0.0000e+00 ***
+  13. morph_marked: V=0.4817, χ²=1160.25, p=1.1355e-252 ***
+  14. order_subject_before_verb: V=0.4810, χ²=2313.93, p=0.0000e+00 ***
+  15. subj_is_proper_noun: V=0.4791, χ²=2295.82, p=0.0000e+00 ***
+  16. obj_is_pronoun: V=0.4710, χ²=2218.73, p=0.0000e+00 ***
+  17. obj_animate: V=0.4710, χ²=2218.73, p=0.0000e+00 ***
+  18. obj_is_proper_noun: V=0.4710, χ²=2218.67, p=0.0000e+00 ***
+  19. has_ARG1: V=0.4397, χ²=966.67, p=1.2335e-210 ***
+  20. order_object_before_verb: V=0.4293, χ²=1842.93, p=0.0000e+00 ***
+
+Saved full chi-square results to C:\Users\Nathan\OneDrive\Documents\University\LING30015\Code\Report\figures\voice_categorical_chisquare.csv
+
+--- Statistical Tests (Numeric Features vs Voice) ---
+  Error analyzing subj_tree_distance: All numbers are identical in kruskal
+  Error analyzing obj_tree_distance: All numbers are identical in kruskal
+  Error analyzing sentence_index: All numbers are identical in kruskal
+  Error analyzing paragraph_index: All numbers are identical in kruskal
+  Error analyzing sentence_pos_normalized: All numbers are identical in kruskal
+  Error analyzing paragraph_pos_normalized: All numbers are identical in kruskal
+
+Top 20 Numeric Features by Effect Size (Eta-Squared):
+  1. n_subj: η²=0.5887, H=2943.01, p=0.0000e+00 ***
+      Means: other=0.000, active=0.726, passive=0.000
+  2. n_subj_nodes: η²=0.4591, H=2294.81, p=0.0000e+00 ***
+      Means: other=0.002, active=0.734, passive=0.306
+  3. n_objs: η²=0.4418, H=2208.59, p=0.0000e+00 ***
+      Means: other=0.000, active=0.603, passive=0.014
+  4. n_obj: η²=0.4418, H=2208.59, p=0.0000e+00 ***
+      Means: other=0.000, active=0.603, passive=0.014
+  5. n_subj_pass: η²=0.2635, H=1317.33, p=8.8056e-287 ***
+      Means: other=0.000, active=0.000, passive=0.302
+  6. lemma_passive_rate: η²=0.1774, H=838.92, p=6.7738e-183 ***
+      Means: other=0.027, active=0.095, passive=0.297
+  7. subj_linear_distance: η²=0.1113, H=216.36, p=1.0423e-47 ***
+      Means: other=8.000, active=2.390, passive=4.019
+  8. lemma_transitivity: η²=0.1023, H=483.75, p=9.0217e-106 ***
+      Means: other=0.271, active=0.488, passive=0.262
+  9. lemma_freq_per_million: η²=0.0909, H=429.94, p=4.3659e-94 ***
+      Means: other=16279.715, active=8033.227, passive=8412.127
+  10. obj_linear_distance: η²=0.0866, H=186.31, p=3.4883e-41 ***
+      Means: other=3.173, active=2.613, passive=4.133
+  11. subject_coref_count: η²=0.0682, H=340.87, p=9.5928e-75 ***
+      Means: other=1.675, active=0.238, passive=0.986
+  12. n_advmod: η²=0.0662, H=331.15, p=1.2351e-72 ***
+      Means: other=0.051, active=0.301, passive=0.180
+  13. n_obl: η²=0.0572, H=285.90, p=8.2554e-63 ***
+      Means: other=0.102, active=0.350, passive=0.336
+  14. n_clausal_complements: η²=0.0483, H=241.51, p=3.6048e-53 ***
+      Means: other=0.060, active=0.200, passive=0.052
+  15. n_xcomp: η²=0.0310, H=155.18, p=2.0051e-34 ***
+      Means: other=0.034, active=0.133, passive=0.044
+  16. formality_score: η²=0.0229, H=114.52, p=1.3547e-25 ***
+      Means: other=0.333, active=0.352, passive=0.397
+  17. lemma_freq: η²=0.0222, H=110.92, p=8.2134e-25 ***
+      Means: other=347.070, active=198.257, passive=208.696
+  18. person: η²=0.0200, H=47.00, p=6.2342e-11 ***
+      Means: other=2.620, active=2.510, passive=2.841
+  19. n_ccomp: η²=0.0169, H=84.28, p=5.0069e-19 ***
+      Means: other=0.020, active=0.064, passive=0.006
+  20. n_compound: η²=0.0080, H=39.81, p=2.2675e-09 ***
+      Means: other=0.003, active=0.000, passive=0.016
+
+Saved full numeric test results to C:\Users\Nathan\OneDrive\Documents\University\LING30015\Code\Report\figures\voice_numeric_tests.csv
+
+--- Mutual Information (All Features) ---
+
+Top 30 Features by Mutual Information:
+  1. has_nsubj: MI=0.3666
+  2. n_subj: MI=0.3625
+  3. order_subject_before_verb: MI=0.3035
+  4. subj_animate: MI=0.3022
+  5. verb_semantic_classes: MI=0.2997
+  6. subj_is_pronoun: MI=0.2954
+  7. subj_is_proper_noun: MI=0.2926
+  8. order_type: MI=0.2879
+  9. n_subj_nodes: MI=0.2878
+  10. lemma_transitivity: MI=0.2846
+  11. n_obj: MI=0.2713
+  12. lemma_freq: MI=0.2708
+  13. obj_is_proper_noun: MI=0.2705
+  14. obj_animate: MI=0.2692
+  15. obj_is_pronoun: MI=0.2684
+  16. n_objs: MI=0.2676
+  17. xpos: MI=0.2602
+  18. lemma_freq_per_million: MI=0.2599
+  19. this_passive_evidence: MI=0.2576
+  20. subj_linear_distance: MI=0.2159
+  21. verbnet_classes: MI=0.2118
+  22. order_object_before_verb: MI=0.2082
+  23. lemma_passive_rate: MI=0.1880
+  24. verbform: MI=0.1492
+  25. aux_lemmas: MI=0.1364
+  26. participial: MI=0.1304
+  27. tense: MI=0.1217
+  28. has_ARG0: MI=0.1210
+  29. n_subj_pass: MI=0.1191
+  30. morph_marked: MI=0.1156
+
+Saved mutual information results to C:\Users\Nathan\OneDrive\Documents\University\LING30015\Code\Report\figures\voice_mutual_information.csv
+Saved MI plot to C:\Users\Nathan\OneDrive\Documents\University\LING30015\Code\Report\figures\voice_mutual_information_plot.png
+
+--- Feature Statistics by Voice Category ---
+
+=== Voice: active ===
+N = 2300
+
+Top numeric features (by mean):
+  aspect: mean=nan, std=nan
+  person: mean=2.5102, std=0.7702
+  n_subj_nodes: mean=0.7343, std=0.4525
+  n_objs: mean=0.6030, std=0.4894
+  n_iobjs: mean=0.0200, std=0.1400
+  n_clausal_complements: mean=0.1996, std=0.4008
+  subj_linear_distance: mean=2.3903, std=3.0922
+  subj_tree_distance: mean=1.0000, std=0.0000
+  obj_linear_distance: mean=2.6127, std=2.3907
+  obj_tree_distance: mean=1.0000, std=0.0000
+
+Top categorical features:
+  xpos: VB=697, VBD=483, VBP=414
+  tense: Pres=919, Past=606
+  mood: Ind=1152, Imp=52, Sub=4
+  number: Sing=803, Plur=353
+  aux_present: False=1735, True=565
+  aux_lemmas: []=1735, ['be']=115, ['have']=107
+  aux_be: False=2173, True=127
+  aux_get: False=2300
+  aux_have: False=2172, True=128
+  aux_modal: False=2064, True=236
+
+=== Voice: other ===
+N = 1827
+
+Top numeric features (by mean):
+  aspect: mean=nan, std=nan
+  person: mean=2.6199, std=0.7218
+  n_subj_nodes: mean=0.0022, std=0.0573
+  n_objs: mean=0.0000, std=0.0000
+  n_iobjs: mean=0.0044, std=0.0660
+  n_clausal_complements: mean=0.0597, std=0.2504
+  subj_linear_distance: mean=8.0000, std=7.5498
+  subj_tree_distance: mean=1.0000, std=0.0000
+  obj_linear_distance: mean=3.1734, std=1.2777
+  obj_tree_distance: mean=1.0000, std=0.0000
+
+Top categorical features:
+  xpos: VBZ=372, VB=338, MD=334
+  tense: Pres=775, Past=254
+  mood: Ind=900, Imp=27, Sub=1
+  number: Sing=678, Plur=223
+  aux_present: False=1805, True=22
+  aux_lemmas: []=1805, ['be']=8, ['do']=6
+  aux_be: False=1819, True=8
+  aux_get: False=1827
+  aux_have: False=1824, True=3
+  aux_modal: False=1822, True=5
+
+=== Voice: passive ===
+N = 873
+
+Top numeric features (by mean):
+  aspect: mean=nan, std=nan
+  person: mean=2.8413, std=0.5321
+  n_subj_nodes: mean=0.3058, std=0.4684
+  n_objs: mean=0.0137, std=0.1165
+  n_iobjs: mean=0.0011, std=0.0338
+  n_clausal_complements: mean=0.0515, std=0.2212
+  subj_linear_distance: mean=4.0189, std=3.7745
+  subj_tree_distance: mean=1.0000, std=0.0000
+  obj_linear_distance: mean=4.1331, std=3.0432
+  obj_tree_distance: mean=1.0000, std=0.0000
+
+Top categorical features:
+  xpos: VBN=614, VBD=95, VB=58
+  tense: Past=709, Pres=109
+  mood: Ind=186, Sub=3
+  number: Sing=116, Plur=73
+  aux_present: False=579, True=294
+  aux_lemmas: []=579, ['be']=218, ['be', 'have']=25
+  aux_be: False=581, True=292
+  aux_get: False=871, True=2
+  aux_have: False=838, True=35
+  aux_modal: False=824, True=49
+
+Saved combined importance plot to C:\Users\Nathan\OneDrive\Documents\University\LING30015\Code\Report\figures\voice_combined_importance.png
+
+--- Features Most Predictive of Each Voice Category ---
+
+=== Features Most Predictive of 'active' Voice ===
+
+Top features predicting 'active' voice:
+  1. lemma_freq_per_million: mean in active=8033.227, mean in others=12345.921, diff=-4312.694
+  2. lemma_freq: mean in active=198.257, mean in others=277.883, diff=-79.627
+  3. subj_linear_distance: mean in active=2.390, mean in others=6.009, diff=-3.619
+  4. has_nsubj=True: active=72.6%, others=0.0%, diff=72.6%
+  5. subject_coref_count: mean in active=0.238, mean in others=1.331, diff=-1.093
+  6. n_subj: mean in active=0.726, mean in others=0.000, diff=0.726
+  7. obj_linear_distance: mean in active=2.613, mean in others=3.653, diff=-1.041
+  8. n_objs: mean in active=0.603, mean in others=0.007, diff=0.596
+  9. n_obj: mean in active=0.603, mean in others=0.007, diff=0.596
+  10. n_subj_nodes: mean in active=0.734, mean in others=0.154, diff=0.580
+  11. order_subject_before_verb=True: active=69.9%, others=15.2%, diff=54.7%
+  12. order_object_before_verb=False: active=66.2%, others=18.2%, diff=48.0%
+  13. order_type=SVO: active=39.6%, others=7.6%, diff=32.0%
+  14. clause_type=main: active=40.2%, others=9.0%, diff=31.2%
+  15. participial=False: active=84.0%, others=60.5%, diff=23.5%
+  16. xpos=VB: active=30.3%, others=12.6%, diff=17.7%
+  17. has_aux_pass=False: active=100.0%, others=83.2%, diff=16.8%
+  18. order_type=SV: active=22.9%, others=6.1%, diff=16.7%
+  19. lemma_transitivity: mean in active=0.488, mean in others=0.267, diff=0.222
+  20. verbform=Inf: active=27.9%, others=11.6%, diff=16.2%
+
+Saved active-specific predictor plot to C:\Users\Nathan\OneDrive\Documents\University\LING30015\Code\Report\figures\voice_predictors_active.png
+Saved active-specific data to C:\Users\Nathan\OneDrive\Documents\University\LING30015\Code\Report\figures\voice_predictors_active.csv
+
+=== Features Most Predictive of 'other' Voice ===
+
+Top features predicting 'other' voice:
+  1. lemma_freq_per_million: mean in other=16279.715, mean in others=8222.677, diff=8057.038
+  2. lemma_freq: mean in other=347.070, mean in others=203.476, diff=143.594
+  3. subj_linear_distance: mean in other=8.000, mean in others=3.205, diff=4.795
+  4. subject_coref_count: mean in other=1.675, mean in others=0.612, diff=1.063
+  5. order_type=_MISSING_: other=99.8%, others=48.4%, diff=51.4%
+  6. order_subject_before_verb=_MISSING_: other=99.8%, others=48.4%, diff=51.4%
+  7. n_subj_nodes: mean in other=0.002, mean in others=0.520, diff=-0.518
+  8. has_nsubj=False: other=100.0%, others=63.7%, diff=36.3%
+  9. morph_marked=False: other=91.5%, others=49.5%, diff=42.0%
+  10. order_object_before_verb=_MISSING_: other=90.5%, others=47.6%, diff=42.9%
+  11. n_subj: mean in other=0.000, mean in others=0.363, diff=-0.363
+  12. participial=False: other=93.0%, others=56.0%, diff=37.0%
+  13. verbform=Fin: other=69.1%, others=37.3%, diff=31.7%
+  14. n_objs: mean in other=0.000, mean in others=0.308, diff=-0.308
+  15. n_obj: mean in other=0.000, mean in others=0.308, diff=-0.308
+  16. finite=True: other=69.1%, others=37.3%, diff=31.7%
+  17. nonfinite=False: other=69.1%, others=37.3%, diff=31.7%
+  18. clause_finiteness=finite: other=69.1%, others=37.3%, diff=31.7%
+  19. aux_lemmas=[]: other=98.8%, others=70.9%, diff=27.9%
+  20. clause_type=subordinate: other=98.2%, others=71.8%, diff=26.4%
+
+Saved other-specific predictor plot to C:\Users\Nathan\OneDrive\Documents\University\LING30015\Code\Report\figures\voice_predictors_other.png
+Saved other-specific data to C:\Users\Nathan\OneDrive\Documents\University\LING30015\Code\Report\figures\voice_predictors_other.csv
+
+=== Features Most Predictive of 'passive' Voice ===
+
+Top features predicting 'passive' voice:
+  1. lemma_freq_per_million: mean in passive=8412.127, mean in others=12156.471, diff=-3744.344
+  2. lemma_freq: mean in passive=208.696, mean in others=272.663, diff=-63.967
+  3. obj_linear_distance: mean in passive=4.133, mean in others=2.893, diff=1.240
+  4. subj_linear_distance: mean in passive=4.019, mean in others=5.195, diff=-1.176
+  5. xpos=VBN: passive=70.3%, others=3.4%, diff=66.9%
+  6. participial=True: passive=72.1%, others=11.5%, diff=60.5%
+  7. verbform=Part: passive=72.1%, others=11.5%, diff=60.5%
+  8. tense=Past: passive=81.2%, others=20.1%, diff=61.1%
+  9. morph_marked=True: passive=72.1%, others=18.7%, diff=53.4%
+  10. has_nsubj=False: passive=100.0%, others=63.7%, diff=36.3%
+  11. n_subj: mean in passive=0.000, mean in others=0.363, diff=-0.363
+  12. finite=False: passive=78.4%, others=38.9%, diff=39.4%
+  13. nonfinite=True: passive=78.4%, others=38.9%, diff=39.4%
+  14. clause_finiteness=nonfinite: passive=78.4%, others=38.9%, diff=39.4%
+  15. has_aux_pass=True: passive=33.7%, others=0.0%, diff=33.7%
+  16. has_nsubj_pass=True: passive=30.2%, others=0.0%, diff=30.2%
+  17. aux_be=True: passive=33.4%, others=3.0%, diff=30.5%
+  18. n_objs: mean in passive=0.014, mean in others=0.302, diff=-0.288
+  19. n_obj: mean in passive=0.014, mean in others=0.302, diff=-0.288
+  20. n_subj_pass: mean in passive=0.302, mean in others=0.000, diff=0.302
+
+Saved passive-specific predictor plot to C:\Users\Nathan\OneDrive\Documents\University\LING30015\Code\Report\figures\voice_predictors_passive.png
+Saved passive-specific data to C:\Users\Nathan\OneDrive\Documents\University\LING30015\Code\Report\figures\voice_predictors_passive.csv
+
+--- Creating comparative heatmap of feature means by voice ---
+Saved feature means heatmap to C:\Users\Nathan\OneDrive\Documents\University\LING30015\Code\Report\figures\voice_feature_means_heatmap.png
+
+================================================================================

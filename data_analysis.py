@@ -9,10 +9,13 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score, precision_recall_fscore_support, roc_auc_score, classification_report
 from sklearn.inspection import permutation_importance
 
+import sys
+sys.stdout.reconfigure(encoding='utf-8')
+
 # load csv
 # resolve paths relative to this script
 script_dir = os.path.dirname(os.path.abspath(__file__)) if '__file__' in globals() else os.getcwd()
-fig_dir = os.path.join(script_dir, "figures")
+fig_dir = os.path.join(script_dir, "output")
 tables_dir = os.path.join(fig_dir, "tables")
 os.makedirs(fig_dir, exist_ok=True)
 os.makedirs(tables_dir, exist_ok=True)

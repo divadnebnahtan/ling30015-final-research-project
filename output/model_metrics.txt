@@ -1,4 +1,4 @@
-RandomForest metrics (held-out)
+RandomForest metrics)
 Accuracy: 1.000
 Precision: 1.000
 Recall: 1.000
